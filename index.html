@@ -468,11 +468,36 @@
             <br>
             <div class="container">
                 <div class="browser-header-image-holder">
-                    <iframe src="https://teams.bogged.finance/embeds/chart?address=0x44C4eDDef663fC65E93987A153c31314cC4C9eb1&amp;chain=bsc&amp;charttype=candles&amp;theme=bg:030b15|bg2:004a5c|primary:00cdff|secondary:004a5c|text:fffff|text2:F3F6FBFF|candlesUp:00FF7DFF|candlesDown:FF003FFF|chartLine:00c4f4&amp;defaultinterval=1m&amp;showchartbutton=true" frameborder="0" height="400px" width="100%"></iframe>
+                    <div class="chart_data">
+                        <style>
+                          #dexscreener-embed {
+                            position: relative;
+                            width: 100%;
+                            padding-bottom: 165%;
+                            margin-bottom: -100%;
+                          }
+                      
+
+                      
+                          #dexscreener-embed iframe {
+                            position: absolute;
+                            width: 100%;
+                            height: 70%;
+                            top: 0;
+                            left: 0;
+                            border: 0;
+                          }
+                        </style>
+                        <div id="dexscreener-embed">
+                          <iframe src="https://dexscreener.com/bsc/0x57A99610A5970aF1f5E5E7792e66FD76EC598b4F?embed=1&theme=dark&trades=0&info=0"></iframe>
+                        </div>
+                      </div>
                 </div>
             </div>
             <div class="container">
-                <div class="categories-section">
+                <div class="categories-section" style="
+                margin-top: 60%;
+            ">
                     <h3>Categories</h3>
                     <div class="flex max-2 flex-center wrap bleed" style="--bleed-width: 8px">
                         <a class="category-rounded flex flex-center flex-text-center" href="https://vistapay.io">
